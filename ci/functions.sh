@@ -32,4 +32,5 @@ function activeMachine(){
   fi
   echo "docker-machine env $machineName"
   eval $(docker-machine env $machineName)
+  docker-machine active
 }
